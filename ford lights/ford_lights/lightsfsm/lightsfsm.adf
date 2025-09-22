@@ -1,0 +1,33 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=lightsfsm
+[Library]
+lightsfsm=.\lightsfsm\lightsfsm.lib
+[$LibMap$]
+lightsfsm=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\serialtwoscomplementer
+[Files]
+/lightfsm.sv=-1
+/lightfsm.tv=-1
+/twoscomp.tv=-1
+/twoscomp.sv=-1
+[Files.Data]
+.\src\lightfsm.sv=SystemVerilog Source Code
+.\src\lightfsm.tv=External File
+.\src\twoscomp.tv=External File
+.\src\twoscomp.sv=SystemVerilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

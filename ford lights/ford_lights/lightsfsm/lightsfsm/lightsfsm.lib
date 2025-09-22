@@ -1,0 +1,70 @@
+timestamp=1757954674681
+
+[~A]
+C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/lightfsm.sv=0*58324*59775
+C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/twoscomp.sv=0*8074*9333
+LastVerilogToplevel=testbench
+ModifyID=23
+Version=74
+
+[~MFT]
+0=7|0lightsfsm.mgf|59775|40947
+1=6|1lightsfsm.mgf|158074|147984
+3=12|3lightsfsm.mgf|85973|81361
+
+[$root]
+A/$root=22|||1*152825
+BinW64/$root=3*83415
+SLP=3*83530
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921669b32c2c036d2cb1dcb54fefde17d783
+
+[flop]
+A/flop=22|../src/twoscomp.sv|19|1*15791
+BinW64/flop=3*11959
+R=../src/twoscomp.sv|19
+SLP=3*12321
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0ca17c272be44b6265f55658ef24734881e332bf3a197143eba7c002a7153c8c
+
+[flopr]
+A/flopr=22|../src/twoscomp.sv|28|1*16685
+BinW64/flopr=3*12487
+R=../src/twoscomp.sv|28
+SLP=3*12910
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|cc857a562255e32d9bdbe4a554e856f70e3af94914c1f325443fdacf0afdddbd
+
+[flops]
+A/flops=22|../src/twoscomp.sv|37|1*14798
+BinW64/flops=3*11314
+R=../src/twoscomp.sv|37
+SLP=3*11738
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|a56e46ce2d478c18c585f3bf324f0e457aef0a7f4f43af537e572419b6207394
+
+[lightfsm]
+A/lightfsm=22|../src/lightfsm.sv|1|1*153215
+BinW64/lightfsm=3*83598
+R=../src/lightfsm.sv|1
+SLP=3*83716
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bbc0232913377feca65dafbedceb0e22bf27d3090d6c2eeec6e2c876aebcd7eadd7633e3056c7821db3b0e9f056a4022
+
+[testbench]
+A/testbench=22|../src/lightfsm.sv|62|1*158074
+BinW64/testbench=3*83860
+R=../src/lightfsm.sv|62
+SLP=3*85973
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913b66f228e1eeaf702a7737f811db3b29a
+
+[twoscomp]
+A/twoscomp=22|../src/twoscomp.sv|1|1*12837
+BinW64/twoscomp=3*11073
+R=../src/twoscomp.sv|1
+SLP=3*11191
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|01c7e978c7682866837de6a09a6aaa092ee189b2933808b822fa005fb65d11df7a33e893542c5ad60d23aac2e75c9af8
+
+[~U]
+$root=12|0*57668|
+flop=12|0*7489||0x10
+flopr=12|0*7682||0x10
+flops=12|0*7283|
+lightfsm=12|0*57866|
+testbench=12|0*58138||0x10
+twoscomp=12|0*7053|

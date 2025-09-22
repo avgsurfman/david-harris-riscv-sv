@@ -1,0 +1,837 @@
+# Design: Design lightsfsm already active.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+compile
+# Error: invalid command name compile
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog lightsfsm
+# Error: VCP1010 Cannot find source file: lightsfsm
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog lightsfsm $dsn/src/lightsfsm.sv
+# Error: VCP1010 Cannot find source file: C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/lightsfsm.sv
+# Error: VCP1010 Cannot find source file: lightsfsm
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/twoscomp.sv
+# Unit top modules: flop flopr testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.8 [s]
+# SLP: Finished : 2.0 [s]
+# SLP: 14 (63.64%) primitives and 8 (36.36%) other processes in SLP
+# SLP: 52 (98.11%) signals in SLP and 1 (1.89%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.2 [s].
+# KERNEL: SLP loading done - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4690 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  4:52 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/ns0" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/ns1" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/ns2" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/ns3" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/s0" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/s1" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/s2" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/s3" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/n_s3s2" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/n_s1s0" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/n_s3" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/n_s1" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/clk" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/reset" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/left" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/right" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/la" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/lb" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/lc" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/ra" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/rb" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/testbench/dut/rc" does not have read access. Use switch +access +r for this region.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /testbench/dut/ns0 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/ns1 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/ns2 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/ns3 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/s0 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/s1 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/s2 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/s3 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/n_s3s2 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/n_s1s0 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/n_s3 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/n_s1 not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/clk not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/reset not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/left not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/right not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/la not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/lb not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/lc not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/ra not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/rb not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench/dut/rc not found in C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb.
+run @1us
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 0 0 0 0 (100000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 0 0 0 0 0 (111000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 0 (000000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 0 0 (000111 expected)
+# KERNEL:         14 tests completed with         10 errors
+# KERNEL: Hash: 3d
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (91): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim -O5 +access +r +m+testbench testbench
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.3 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 14 (63.64%) primitives and 8 (36.36%) other processes in SLP
+# SLP: 52 (98.11%) signals in SLP and 1 (1.89%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.5 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4690 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  5:13 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run @1us
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (91): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+# VSIM: 15 object(s) traced.
+run @1us
+# KERNEL: Error: inputs = xx
+# KERNEL:  outputs = 0 0 0 0 0 0 (xxxxxx expected)
+# KERNEL:         15 tests completed with         10 errors
+# KERNEL: Hash: 70
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (91): $stop called.
+# KERNEL: Time: 165 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 165 ps + 1.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 14 (63.64%) primitives and 8 (36.36%) other processes in SLP
+# SLP: 52 (98.11%) signals in SLP and 1 (1.89%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4690 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  5:14 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run @1us
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (91): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 14 (63.64%) primitives and 8 (36.36%) other processes in SLP
+# SLP: 52 (98.11%) signals in SLP and 1 (1.89%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4690 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  5:16 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1 000 ns
+# Error: run: unexpected parameter ns
+# Error: Usage:
+# Error: run -help
+# Error: run [-all | -continue | -delta {<number> | @<number>} | -next | <time_step> | @<time>]
+run 1 000ns
+# Error: run: unexpected parameter 000ns
+# Error: Usage:
+# Error: run -help
+# Error: run [-all | -continue | -delta {<number> | @<number>} | -next | <time_step> | @<time>]
+run 1000ns
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (91): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+testbench testbench
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 14 (63.64%) primitives and 8 (36.36%) other processes in SLP
+# SLP: 52 (98.11%) signals in SLP and 1 (1.89%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  5:41 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1 ns;
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 1 0 0 0
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (92): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#77_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Info: VCP2876 lightfsm.sv : (28, 18): Implicit net declaration, symbol not_is_idle has not been declared in module lightfsm.
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+testbench testbench
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 16 (66.67%) primitives and 8 (33.33%) other processes in SLP
+# SLP: 55 (98.21%) signals in SLP and 1 (1.79%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:02 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1 ns;
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 1 0 0 0
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (97): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#82_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Info: VCP2876 lightfsm.sv : (30, 18): Implicit net declaration, symbol not_is_idle has not been declared in module lightfsm.
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+testbench testbench
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 18 (69.23%) primitives and 8 (30.77%) other processes in SLP
+# SLP: 57 (98.28%) signals in SLP and 1 (1.72%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:07 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1 ns;
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (100000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 1 0 0 0
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 1 1 (000100 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL:         14 tests completed with          9 errors
+# KERNEL: Hash: 78
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (101): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#86_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run 1 ns;
+# KERNEL: Error: inputs = xx
+# KERNEL:  outputs = 0 0 0 0 0 0 (xxxxxx expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL:         15 tests completed with         10 errors
+# KERNEL: Hash: 70
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (101): $stop called.
+# KERNEL: Time: 165 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#86_3@.
+# KERNEL: Stopped at time 165 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+testbench testbench
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 18 (69.23%) primitives and 8 (30.77%) other processes in SLP
+# SLP: 56 (98.25%) signals in SLP and 1 (1.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:11 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1 ns;
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL:         14 tests completed with          6 errors
+# KERNEL: Hash: 7e
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (101): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#86_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 18 (69.23%) primitives and 8 (30.77%) other processes in SLP
+# SLP: 56 (98.25%) signals in SLP and 1 (1.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:16 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1ns
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 1 0 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 0 0 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL:         14 tests completed with          6 errors
+# KERNEL: Hash: 7e
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (100): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#85_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 19 (70.37%) primitives and 8 (29.63%) other processes in SLP
+# SLP: 58 (98.31%) signals in SLP and 1 (1.69%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:38 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run 1ns;
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 0 0 1 0 0 (100000 expected)
+# KERNEL: Mem: 0 0 1 0
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 0 1 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 1 1 1 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL: Error: inputs = 10
+# KERNEL:  outputs = 1 0 0 1 0 0 (100000 expected)
+# KERNEL: Mem: 0 0 1 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 1 1 0 1 0 0 (110000 expected)
+# KERNEL: Mem: 0 0 1 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 1 1 1 1 0 0 (111000 expected)
+# KERNEL: Mem: 0 0 0 1
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL: Error: inputs = 01
+# KERNEL:  outputs = 0 0 0 0 0 0 (000100 expected)
+# KERNEL: Mem: 1 0 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 1 (000110 expected)
+# KERNEL: Mem: 1 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 1 0 (000111 expected)
+# KERNEL: Mem: 0 1 0 0
+# KERNEL: Error: inputs = 00
+# KERNEL:  outputs = 0 0 0 1 0 0 (000000 expected)
+# KERNEL: Mem: 0 0 0 0
+# KERNEL:         14 tests completed with         14 errors
+# KERNEL: Hash: 7d
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (108): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#93_3@.
+# KERNEL: Stopped at time 155 ps + 1.
+alog -O2 -sve -msg 5 -sv2k17 -work lightsfsm $dsn/src/lightfsm.sv
+# Unit top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 19 (70.37%) primitives and 8 (29.63%) other processes in SLP
+# SLP: 58 (98.31%) signals in SLP and 1 (1.69%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4691 kB (elbread=427 elab2=4129 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\franc\OneDrive\Pulpit\PROJEKTY\Modelsim\ford lights\ford_lights\lightsfsm\src\wave.asdb
+#  6:44 PM, Monday, September 15, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/franc/OneDrive/Pulpit/PROJEKTY/Modelsim/ford lights/ford_lights/lightsfsm/src/wave.asdb'.
+run 1ns;
+# KERNEL:         14 tests completed with          0 errors
+# KERNEL: Hash: 21
+# RUNTIME: Info: RUNTIME_0070 lightfsm.sv (108): $stop called.
+# KERNEL: Time: 155 ps,  Iteration: 1,  Instance: /testbench,  Process: @ALWAYS#93_3@.
+# KERNEL: Stopped at time 155 ps + 1.

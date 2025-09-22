@@ -1,0 +1,13 @@
+*.bak
+*.mti
+*.wlf
+*.mpf
+
+*/*.bak
+*/*.mti
+*/*.wlf
+*/*.mpf
+
+
+work/
+desktop.ini
